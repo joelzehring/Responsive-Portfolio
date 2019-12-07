@@ -1,0 +1,214 @@
+/*---- Homework Specs ----*/
+
+/*
+   * Teal color (used for headings and backgrounds): `#4aaaa5`
+   * Regular font color (used for paragraphs and all text besides the headings): `#777777`
+   * Main header background color: `#ffffff`
+   * Main header border color: `#cccccc`
+   * Footer background color: `#666666`
+   * Main content background color: `#ffffff`
+   * Main content border color: `#dddddd`
+*/
+
+/*---- Overall Layout, Header, Main, Footer ----*/
+
+body {
+	min-height: 100vh;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	background: url("../../assets/images/gplaypattern.png") top left / 25%;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: white;
+	border-bottom: 1px solid #cccccc;
+}
+
+.container-header {
+	max-width: 960px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2em;
+	padding: 1em 0em 1em 0em;
+	background: #4aaaa5;
+}
+
+nav {
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 a, a:visited {
+    color: white;
+	padding: 0em 1em 0em 1em;
+}
+
+nav a, nav a:visited {
+	color: gray;
+}
+
+nav ul li {
+	text-decoration: none;
+	list-style: none;
+	display: inline;
+	padding: 0em 1em 0em 1em;
+	border-right: .5px solid #dddddd;
+}
+
+nav ul li:hover {
+	border-bottom: .2em solid #ddd;
+}
+
+nav ul li:last-of-type {
+	border-right: none;
+	padding-right: none;
+}
+
+.tab-active {
+	border-bottom: .2em solid #4aaaa5;
+}
+
+main {
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: white;
+	border: 1px solid #dddddd;
+	flex-grow: 2;
+}
+
+section {
+	margin: 2em;
+}
+
+.heading {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 600;
+}
+
+.content-heading {
+	font-size: 1.5em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 2px solid #dddddd;
+	color: #4aaaa5;
+}
+
+footer {
+	background-color: #666666;
+	color: #fff;
+	height: 3em;
+	border-top: 8px solid #4aaaa5;
+}
+
+footer p {
+	position: relative;
+	top: 2em;
+	text-align: center;
+	font-size: .8em;
+}
+
+/*---- Project Page and Project Thumbs ----*/
+
+.project {
+	display: inline-block;
+	height: 16em;
+	width: 16em;
+	border: 1px solid gray;
+	margin: .5em;
+}
+
+.project:hover {
+	box-shadow: 5px 5px 150px #fff inset, -5px -5px 150px #fff inset;
+
+}
+
+.project-title {
+	position: relative;
+	top: 75%;
+	color: white;
+	background-color: #4aaaa5;
+	padding: 1em;
+}
+
+.project1 {
+	background: 
+	url("../../assets/images/biblemem.png")
+	top left / 200%
+	no-repeat;
+}
+
+.project2 {
+	background: 
+	url("../../assets/images/markdown-pre.png")
+	top left / 200%
+	no-repeat;
+}
+
+.project3 {
+	background: 
+	url("../../assets/images/joelz-me.png")
+	top left / 200%
+	no-repeat;
+}
+
+.project4 {
+	background: 
+	url("../../assets/images/codepen-io.png")
+	center left / 250%
+	no-repeat;
+}
+
+/*---- About page ----*/
+
+.img-headshot {
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin-right: 1em;
+}
+
+.about-content {
+	line-height: 2em;
+}
+
+/*---- Contact Form ----*/
+
+form {
+	width: 100%;
+	margin-right: 5em;
+}
+
+input {
+	display: block;
+	width: 98%;
+	margin: 1em 0 1em 0;
+	padding: .5em;
+}
+
+textarea {
+	display: block;
+	width: 98%;
+	height: 20em;
+	margin: 1em 0 1em 0;
+	padding: .5em;
+}
+
+button {
+	background: #4aaaa5;
+	color: white;
+	padding: 1em;
+	border: none;
+	font-size: 1em;
+}
