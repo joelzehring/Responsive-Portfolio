@@ -48,7 +48,7 @@ a {
 }
 
 h1 a, a:visited {
-    color: white;
+  color: white;
 	padding: 0em 1em 0em 1em;
 }
 
@@ -121,12 +121,17 @@ footer p {
 
 /*---- Project Page and Project Thumbs ----*/
 
+.container-projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
 .project {
-	display: inline-block;
 	height: 16em;
 	width: 16em;
 	border: 1px solid gray;
-	margin: .5em;
+	margin: 1em;
 }
 
 .project:hover {
@@ -212,3 +217,36 @@ button {
 	border: none;
 	font-size: 1em;
 }
+
+/* --- Media Queries --- */
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+	
+	.container-header {
+		flex-direction: column;
+	}
+
+	h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	nav {
+		margin: 2em;
+	}
+
+	.img-headshot {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
